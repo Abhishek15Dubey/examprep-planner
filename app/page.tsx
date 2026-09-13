@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { auth } from '@clerk/nextjs/server';
+import { redirect } from 'next/navigation';
 import {
   BookOpen,
   CalendarDays,
@@ -13,7 +15,13 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const { userId } = await auth();
+
+  if (userId) {
+    redirect('/dashboard');
+  }
+
   return (
     <main className="homePage">
       {/* Navigation */}
