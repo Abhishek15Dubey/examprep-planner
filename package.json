@@ -11,12 +11,12 @@
     "@clerk/nextjs": "latest",
     "@neondatabase/serverless": "latest",
     "drizzle-orm": "latest",
-    "lucide-react": "latest",
+    "lucide-react": "^1.45.0",
+    "mammoth": "latest",
     "next": "latest",
-    "react": "latest",
-    "react-dom": "latest",
     "pdf-parse": "latest",
-    "mammoth": "latest"
+    "react": "latest",
+    "react-dom": "latest"
   },
   "devDependencies": {
     "@types/node": "latest",
